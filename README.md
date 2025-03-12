@@ -15,6 +15,5 @@ This project is a migration of a Xamarin Calculator application to an Android Na
 - The CalculatorEngine processes the key presses and updates the calculation and result texts.
 
 ## Video Demonstration
- ./videos/demo.mp4
-
- Click the image above to watch the video demonstration of the project.
+ 
+https://github.com/user-attachments/assets/87404d6b-bea9-4fad-a3d3-0a98e86d79d3
