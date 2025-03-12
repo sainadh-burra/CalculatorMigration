@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.demo.calculatormigration.viewmodel.CalculatorEngineViewModel" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calculationText"
+            android:text="@{viewModel.calculationText}"
+            android:padding="8dp" />
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/resultText"
+            android:text="@{viewModel.resultText}"
+            android:gravity="right"
+            android:padding="8dp" />
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonGridView"
+            android:numColumns="4"
+            android:columnWidth="100dp"
+            android:padding="8dp" />
+    </LinearLayout>
+</layout>
